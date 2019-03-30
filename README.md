@@ -21,7 +21,8 @@ git merge old_a/master
 git rm .\deleteme.txt
 git commit -m “Clean up initial file”
 
-# Move the old_a repo files and folders into a subdirectory so they don’t collide with the other repo coming later
+# Move the old_a repo files and folders into a subdirectory so they don’t collide with 
+# the other repo coming later
 mkdir old_a
 dir –exclude old_a | %{git mv $_.Name old_a}
 
